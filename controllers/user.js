@@ -23,7 +23,7 @@ class UserController {
                 let result = await newSignup.save();
                 if (result.id != '') {
                     
-                    await mailFuncsObj.sendMail(email, "No-replay@testapp.com", "User Registration", "Successfully Registered");
+                    mailFuncsObj.sendMail(email, "No-replay@testapp.com", "User Registration", "Successfully Registered");
                 }
                 return result;
             }

@@ -9,7 +9,9 @@ class mailFuncs  {
                 subject: mail_subject,
                 html: mail_html
             };
-        await sgMail.send(msg);
+            if(process.env.SENDGRID_API_KEY!==undefined){
+                await sgMail.send(msg);
+            }
         } catch (error) {
             throw error;
         }
