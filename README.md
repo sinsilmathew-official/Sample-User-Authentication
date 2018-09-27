@@ -4,7 +4,7 @@ For Run the Application set the following environment variables
 1. Setting PORT
 
 Ubuntu -- export PORT=3000
-Windows -- set PORT=300
+Windows -- set PORT=3000
 
 2.Setting MongoDB 
 
